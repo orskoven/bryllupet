@@ -1,0 +1,62 @@
+pictures*{
+    font-family: "Arial Black", serif;
+    background-color: #fff;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav{
+    font-family: "Arial Black", serif;
+    width: 300px;
+    height: 100%;
+    background-color: darkseagreen;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+
+}
+.nav-valg{
+    background-color: darkseagreen;
+}
+.nav-valg h3{
+    background-color: darkseagreen;
+    padding: 18px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.nav-valg a {
+    background-color: darkseagreen;
+    color: rgba(30, 67, 253, 0.62);
+    text-decoration: none;
+    padding: 18px;
+    padding-left: 40px;
+    display: block;
+    font-size: 18px;
+
+}
+.nav-valg a:hover{
+    background-color: #b8c9b8;
+
+}
+
+.logo{
+    display: flex;
+    justify-content:center;
+    margin-left: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#logo{
+    width: 65%;
+}
+#home{
+
+}
+
+

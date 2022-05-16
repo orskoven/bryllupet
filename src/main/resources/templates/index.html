@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>VI SKAL GIFTES!🤵🏼‍️👰🏼‍‍️‍️‍️‍️️‍️️️️</title>
+    <link rel="stylesheet" th:href="@{style.css}" href="/static/style.css">
+</head>
+
+<style>
+    body{
+        background: darkseagreen url("parbilledepalme.jpeg") no-repeat center;
+        background-size: auto;
+        font-size:3.5rem;
+        height: 100vh;
+        width: 100vw;
+        color: rgba(30, 67, 253, 0.62);
+        font-family: "Arial Black", serif;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+
+    }
+
+
+    input {
+        border: 2px solid rgb(58, 108, 140);
+        border-radius: 10px;
+        height: 50px;
+        width: 200%;
+        background-color: rgba(199, 197, 135, 0);
+        color: #e8ff00;
+    }
+    input[type=text]:focus {
+        background-color: #317c91;
+    }
+
+    section{
+        display: flex;
+        justify-items: start;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.56);
+    }
+
+
+    h1{
+        color: darkslategray;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emaildiv{
+        display: flex;
+        align-items: center;
+    }
+
+    button{
+        border: 2px #3a6c8c;
+        border-radius: 200px;
+        height: 50px;
+        width: 60%;
+        background-color: rgba(222, 202, 202, 0.8);
+        border-bottom-style: groove;
+    }
+
+
+    .inputdiv{
+        font-size: 20px;
+        display:flex;
+        align-items: start;
+
+
+    }
+    /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: rgba(138, 117, 117, 0.87);
+        color: rgba(255, 255, 255, 0.62);
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
+    .navigatortop{
+        display: flex;
+        justify-content: space-between;
+        justify-items: center;
+        align-content: space-between;
+        color: rgba(30, 67, 253, 0.91);
+        text-decoration: none;
+        font-family: "Arial Black", serif;
+    }
+
+    .navigator a:hover {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.usersite {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.den10092022 {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.onsker {
+        color: rgba(255, 255, 255, 0.93);
+    }
+    .navigator a.godehistorier {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .section {
+        height: 10em;
+    }
+
+    .section:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
+
+    .label a {
+
+    }
+
+    .label a#usersite {
+        position: fixed;
+    }
+    .label a#onsker {
+        position: fixed;
+
+    }
+    .label a#godehistorier {
+        position: fixed;
+
+
+    }
+    .label a#den10092022 {
+        position: fixed;
+
+
+    }
+
+    .content {
+        padding: 0.5em;
+    }
+
+    .information_div{
+        margin-left: 25%;
+        justify-content: center;
+        text-align: left;
+    }
+
+
+
+</style>
+<body>
+<!-- TODO User should be able to submit data -->
+<section class="content">
+    VI SKAL <br> GIFTES!<br>
+    <div class="form">
+            <div class="tooltip">
+                <div class="inputdiv">
+                    <input type="password" id="password" name="password"
+                                                 placeholder="Det hemmelige kodeord🔐">
+                    <span class="tooltiptext">Hvor tager vi oftest på ferie?</span><br>
+                    <button input type="submit" onclick="confirmSubmit()">LOGIN🗝</button>
+                    <a type="link" id="approvedlink" name="approved" href="frontpage.html"></a>
+                    <br>
+                </div>
+            </div>
+    </div>
+
+    <script>
+
+        <!--https:www.foowebs.com/p14-How-to-confirm-before-submitting-a-form-with-popup-box-->
+
+        var isPasswordEqualsPasswordConfirm = function() {
+            if (document.getElementById('password'.toLowerCase()).value ===
+                'thy') {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        function confirmSubmit()
+        {
+            if (isPasswordEqualsPasswordConfirm()!==true){
+                var agree=confirm("Det ligger i Nordjylland❤️");
+                if (agree)
+                    return window.location.href = "index.html";
+            } else
+                    return window.location.href = "frontpage.html";
+
+        }
+    </script>
+</section>
+</body>
+</html>
