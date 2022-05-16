@@ -1,22 +1,191 @@
+
 <!DOCTYPE html>
-<html lang="en" xmlns:th="www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>VI SKAL GIFTES!🤵🏼‍️👰🏼‍‍️‍️‍️‍️️‍️️️️</title>
-    <link rel="stylesheet" th:href="@{fragments.css}" href="/static/style.css">
-    <link rel="stylesheet" th:href="@{stylefrag.css}" href="/static/style.css">
+    <link rel="stylesheet" th:href="@{style.css}" href="/static/style.css">
 </head>
+<style>
 
+    body{
+        background: darkseagreen url("parbilledepalme.jpeg") no-repeat center;
+        background-size: auto;
+        font-size:3.5rem;
+        height: 100vh;
+        width: 100vw;
+        color: rgba(30, 67, 253, 0.62);
+        font-family: "Arial Black", serif;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+
+    }
+
+
+    input {
+        border: 2px solid rgb(58, 108, 140);
+        border-radius: 10px;
+        height: 50px;
+        width: 200%;
+        background-color: rgba(199, 197, 135, 0);
+        color: #e8ff00;
+    }
+    input[type=text]:focus {
+        background-color: #317c91;
+    }
+
+    section{
+        display: flex;
+        justify-items: start;
+        align-items: start;
+        background-color: rgba(255, 255, 255, 0.56);
+    }
+
+
+    h1{
+        color: darkslategray;
+    }
+
+    .content{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .emaildiv{
+        display: flex;
+        align-items: center;
+    }
+
+    button{
+        border: 2px #3a6c8c;
+        border-radius: 200px;
+        height: 50px;
+        width: 60%;
+        background-color: rgba(222, 202, 202, 0.8);
+        border-bottom-style: groove;
+    }
+
+
+    .inputdiv{
+        font-size: 20px;
+        display:flex;
+        align-items: start;
+
+
+    }
+    /* Tooltip container */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Tooltip text */
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 150px;
+        background-color: rgba(138, 117, 117, 0.87);
+        color: rgba(255, 255, 255, 0.62);
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text - see examples below! */
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+
+    .navigator a{
+        display: flex;
+        justify-content: space-around;
+        color: rgba(30, 67, 253, 0.91);
+        text-decoration: none;
+        font-family: "Arial Black", serif;
+    }
+
+    .navigator a:hover {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.usersite {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.den10092022 {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .navigator a.onsker {
+        color: rgba(255, 255, 255, 0.93);
+    }
+    .navigator a.godehistorier {
+        color: rgba(255, 255, 255, 0.93);
+    }
+
+    .section {
+        height: 10em;
+    }
+
+    .section:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
+
+    .label {
+        width: 3em;
+    }
+
+    .label a#usersite {
+        transform: rotate(270deg);
+        margin-left: -800px;
+    }
+    .label a#onsker {
+        margin-top: -380px;
+    }
+    .label a#godehistorier {
+        transform: rotate(270deg);
+        margin-right: -750px;
+        margin-top: 350px;
+    }
+    .label a#den10092022 {
+        margin-top: 500px;
+    }
+
+    .content {
+        padding: 0.5em;
+    }
+</style>
+
+<nav class="navigator">
+    <!--  <header class = "titel"> </header> -->
+    <div class="section">
+        <div class="content">
+            <div class="navigator top">
+                <div class="label">
+                    <a id="usersite" href="usersite.html">Forside</a>
+                    <a id="onsker" class="onsker" href="onsker.html">Ønsker</a>
+                    <a id="godehistorier" href="godehistorier.html">Gode historier</a>
+                    <a id="den10092022" href="den10092022.html">10/09/2022</a>
+                </div>
+            </div>
+        </div></div>
+</nav>
 
 <body>
-<nav>
-    <th:block th:replace="fragments/navigator :: nav"></th:block>
-</nav>
-<br>
+<!-- TODO User should be able to submit data -->
 
-<div class="whiteboard">
-    <h1>VI SKAL GIFTES</h1>
-</div>
+
 
 
 </body>
