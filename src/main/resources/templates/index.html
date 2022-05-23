@@ -179,15 +179,14 @@
 
 </style>
 <body>
-<!-- TODO User should be able to submit data -->
 <section class="content">
     VI SKAL <br> GIFTES!<br>
     <div class="form">
             <div class="tooltip">
                 <div class="inputdiv">
                     <input type="password" id="password" name="password"
-                                                 placeholder="Det hemmelige kodeord🔐">
-                    <span class="tooltiptext">Hvor tager vi oftest på ferie?</span><br>
+                                                 placeholder="🔐">
+                    <span class="tooltiptext">Hvor friede Simon til Sofie?💍</span><br>
                     <button input type="submit" onclick="confirmSubmit()">LOGIN🗝</button>
                     <a type="link" id="approvedlink" name="approved" href="frontpage.html"></a>
                     <br>
@@ -211,7 +210,7 @@
         function confirmSubmit()
         {
             if (isPasswordEqualsPasswordConfirm()!==true){
-                var agree=confirm("Det ligger i Nordjylland❤️");
+                var agree=confirm("Det starter på T og slutter på Y❤️");
                 if (agree)
                     return window.location.href = "index.html";
             } else
